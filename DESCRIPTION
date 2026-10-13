@@ -1,0 +1,34 @@
+Package: trf3juris
+Title: Baixa e Organiza Jurisprudencia do Tribunal Regional Federal da 3a Regiao
+Version: 0.1.0
+Authors@R:
+    person("Marcello", "Filgueiras", , "marcellofilgueiras.adv@gmail.com", role = c("aut", "cre"))
+Description: Raspa a pesquisa de jurisprudencia do TRF3
+    (<https://web.trf3.jus.br/jurisprudencia/>), cobrindo acordaos, decisoes
+    monocraticas e turmas recursais; baixa o inteiro teor dos acordaos e
+    consulta metadados processuais na API publica do DataJud/CNJ. Separa
+    sempre a etapa de baixar (grava arquivos em disco, retomavel) da etapa
+    de ler (transforma os arquivos em tibbles).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.1.0)
+Imports:
+    chromote (>= 0.4.0),
+    cli,
+    dplyr,
+    httr2 (>= 1.0.0),
+    jsonlite,
+    lubridate,
+    purrr (>= 1.0.0),
+    rlang (>= 1.1.0),
+    stats,
+    utils,
+    stringr,
+    tibble,
+    xml2
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.1
